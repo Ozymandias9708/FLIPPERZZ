@@ -1,0 +1,38 @@
+.card{
+    /* width: 10px;
+     */
+     position: relative;
+}
+
+.card img{
+    width: 80%; 
+    border: 6px solid #fff;
+    display: block;
+    border-radius: 10px;
+    /* margin: 0; */
+    /* margin: auto; */
+    /* margin-bottom: 10px; */
+}
+
+.card .front{
+    position: absolute;  /*hides the cover*/
+    transform: rotateY(90deg);
+    /* transition: all erase-in 0.2s; */
+    transition: all ease-in 0.2s;
+}
+
+.card .cover{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .front{
+    /* position: absolute; */
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.flipped .cover{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
