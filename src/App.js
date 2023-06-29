@@ -48,8 +48,8 @@ function App() {
     if (choiceOne && choiceTwo) {
       setdisabledState(true)
       if (choiceOne.src === choiceTwo.src) {
-        console.log("Successfull Match")
-        console.log(turns)
+        // console.log("Successfull Match")
+        // console.log(turns)
         setCards(prevCards => {
           return prevCards.map(card => {
             if (card.src === choiceOne.src) {

@@ -6,6 +6,7 @@ body {
     text-align: center;
     /* background: #1b1523; */
     background-image: url('https://usagif.com/wp-content/uploads/gifs/starfall-gif-24.gif');
+    height:120vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
