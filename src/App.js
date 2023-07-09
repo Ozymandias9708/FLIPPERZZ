@@ -6,6 +6,7 @@ import './App.css';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import SingleCard from './Components/SingleCard';
+import './style.css';
 
 const Cards = [
   { "src": "images/sword-1.png", match: false },
@@ -63,8 +64,8 @@ function App() {
         resetTurn()
       }
       else {
-        console.log("Unsuccesfull Match")
-        console.log(turns)
+        // console.log("Unsuccesfull Match")
+        // console.log(turns)
         setTimeout(() =>resetTurn(),400)
       }
     }
@@ -76,7 +77,7 @@ function App() {
     shuffleCards()
   },[])
 
-  console.log(cards)
+  // console.log(cards)
 
 
   const resetTurn = () => {
@@ -90,7 +91,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Fippperz</h1>
+      <h1 className='text-3xl font-bold' >Fippperz</h1>
       <button onClick={shuffleCards} >New Game</button>
 
       <div className="cards-grid">
