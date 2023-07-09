@@ -6,7 +6,7 @@ import './App.css';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import SingleCard from './Components/SingleCard';
-// import './style.css';
+// import '../dist/output.css';
 
 const Cards = [
   { "src": "images/sword-1.png", match: false },
